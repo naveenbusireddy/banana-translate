@@ -9,20 +9,32 @@
         textarea
             {
                 width: 75%;
-                height: 5vh;
+                height: 10vh;
                 display: block;
-                margin: center;
-                padding: 2rem;    
-                border-radius: 2rem; 
+                margin: 1rem;
+                padding: 1rem;    
+                border-radius: 1rem; 
             }
+        #output {
+            border: 1px solid black;
+            height: 10vh;
+            width: 75%;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
     </style>
     <script src="app.js" type="text/javascript"></script>
 </head>
 <body>
     <h1> Banana Translate checking</h1>
-    <textarea id="txt-input"; placeholder = "Put your sentance in English here and will convert it to Miniom" >
+    <textarea id="txt-input" placeholder = "Put your sentance in English here and will convert it to Miniom">
     </textarea>
+    
+    <button id="btn-translate" style="position: fixed; background-color: burlywood">Translate</button>
     <br>
-    <button style="position: fixed; background-color: burlywood"   id="btn-translate">Translate</button>
+    <div style="font-size: large"> Output will come here</div>
+    <div id="output"></div>
+    <script srs="app.js" type="text/javascript"></script>
 </body>
 </html>
