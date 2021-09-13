@@ -1,27 +1,35 @@
 var btnTranslate = document.querySelector("#btn-translate");
-var txtInput = document.querySelector("#txt-input");
-var outputDiv = document.querySelector("#output");
 
-var serverURL = "https://api.funtranslations.com/translate/minion.json"
+var txtInput = document.querySelector("#txt-input")
 
-function getTranslationURL (input) {
-    return serverURL +"?"+"text"+input
+var outputDiv = document.querySelector("#output")
+
+function clickHandler(){
+    outputDiv.innerText = "Translated Minio text is: "+txtInput.value
 }
 
-function errorHandler(error) {
-    console.log("Error Occoured", error);
-    alert("Something wrong with server! try again after some time")
-}
+btnTranslate.addEventListener("click", clickHandler)
 
-function clickHanddler() {
-    var inputText = txtInput.value;
+// var serverURL = "https://api.funtranslations.com/translate/minion.json"
 
-    fetch(getTranslationURL(inputText))
-    .then(response => response.json())
-    .then(json => {
-        var translatedText = json.contents.translated;
-        outputDiv.innerText = translatedText;
-    })
-    .catch(errorHandler)
-}
-btnTranslate.addEventListener("click", clickHanddler)
+// function getTranslationURL (input) {
+//     return serverURL +"?"+"text"+input
+// }
+
+// function errorHandler(error) {
+//     console.log("Error Occoured", error);
+//     alert("Something wrong with server! try again after some time")
+// }
+
+// function clickHanddler() {
+//     var inputText = txtInput.value;
+
+//     fetch(getTranslationURL(inputText))
+//     .then(response => response.json())
+//     .then(json => {
+//         var translatedText = json.contents.translated;
+//         outputDiv.innerText = translatedText;
+//     })
+//     .catch(errorHandler)
+// }
+// btnTranslate.addEventListener("click", clickHanddler)
