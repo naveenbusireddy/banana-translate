@@ -5,7 +5,6 @@ var txtInput = document.querySelector("#txt-input")
 var outputDiv = document.querySelector("#output")
 
 var serverURL = "https://api.funtranslations.com/translate/yoda.json"
-// var serverURL = "https://api.funtranslations.com/translate/groot.json"
 
 function getTranslationURL(input) {
     return serverURL + "?text=" + input;
