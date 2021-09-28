@@ -1,4 +1,4 @@
-# banana-translate
-Banana translate app built with Venilla JS <br>
-To check Banana Translatore, click on below link <br>
-https://banana-translate-naveenreddy.netlify.app/
+# Yoda-Translate
+Yoda translate app built with Venilla JS <br>
+To check Yoda Translatore, click on below link <br>
+https://yoda-translate-naveenreddy.netlify.app/
