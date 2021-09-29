@@ -6,24 +6,29 @@
     <title>Yoda Translate</title>
    <style>
         textarea {
-                width: 80%;
+                width: 60%;
                 height: 10vh;
                 display: block;
-                margin: 1rem;
-                padding: 1rem;     
+                margin: auto;
+                padding: 1rem;   
+                border-color: aqua;  
             }
 
         #output {
             border: 1px solid black;
             height: 10vh;
-            width: 80%;
-            margin: 1rem;
+            width: 60%;
+            margin: auto;
             padding: 1rem;
+            border-color: aqua; 
             
         }
         #btn-translate {
             border-radius: 0.5rem; 
             cursor: pointer;
+            display: block;
+            margin: auto;
+            
         }
     </style> 
 
@@ -33,6 +38,7 @@
     <textarea id="txt-input" 
     placeholder = "Put your sentance in English here and will convert it to Yoda translate">
     </textarea> 
+    <br>
     <button id="btn-translate" ">Translate</button>
     <br>
     <div style="font-size: large; color:rgb(52, 87, 202); text-align: center;"> Output will come here</div>
